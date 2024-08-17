@@ -1,0 +1,175 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1213,701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="45">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="36">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,127.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Coronavirus (COVID-19) - Google News" sap:VirtualizedContainerService.HintSize="510,1418" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4da6f6a5-fb39-4a50-9a40-15afc8ca62f0" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1202" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Location' ReferenceIdx='0' Name='Location'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Total cases' ReferenceIdx='1' Name='Total cases'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='New cases (1 day*)' ReferenceIdx='2' Name='New cases (1 day*)'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='New cases (last 60 days)' ReferenceIdx='3' Name='New cases (last 60 days)'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Cases per 1 million people' ReferenceIdx='4' Name='Cases per 1 million people'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Deaths' ReferenceIdx='5' Name='Deaths'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Location' attr='text' /&gt;&lt;column name='Total cases' attr='text' /&gt;&lt;column name='New cases (1 day*)' attr='text' /&gt;&lt;column name='New cases (last 60 days)' attr='text' /&gt;&lt;column name='Cases per 1 million people' attr='text' /&gt;&lt;column name='Deaths' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="4da6f6a5-fb39-4a50-9a40-15afc8ca62f0" Version="V1">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="441, 472, 641, 9534" FriendlyName="'Sorted by'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="cad599e9-1389-4d62-bc35-d6cac07b78c7" InformativeScreenshot="d90087c030c31f28d2199f073dc0a690.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Coronavirus (COVID-19) - Google News' /&gt;" SearchSteps="Selector" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Data Extracted" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Data Extracted Successfully!&quot;]" />
+              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="434,788" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                <ueab:ExcelProcessScopeX.Body>
+                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,702" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="Setpwd" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A2" WorkbookPath="C:\Users\user\Desktop\RPA Projects\ex3.xlsx" />
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Data Written" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Data written to Excel Successfully!&quot;]" />
+                      <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADSij73AI30aCGeEcTA2O0gAAAAACAAAAAAAQZgAAAAEAACAAAADFPxOw78ZOm5XPlmUqKnPebq/W95a57FKasFLK2o05CQAAAAAOgAAAAAIAACAAAAAhHgWxK6IVBAA4iNsLJuRswcdW7XDzwZsgy/SLLBD96hAAAADPxzZd4YS2OX0m2UCiqmiYQAAAAF1wzfKGQeDdBOSmCRpXuR4EHuRMpX1a3UTMQeqGzozKuRfI2es52rz8yHG3f6/3b9TDnJO1jPFYkI0OpmItmms=" Result="[Setpwd]" />
+                      <ui:SendMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="hi, attached below check it" Cc="apsarshaik2629@gmail.com" DisplayName="Send SMTP Mail Message" Email="eleganttechofficial@gmail.com" EnableSSL="True" From="rahulav.cse2020@citchennai.net" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Name="rahul" Password="[Setpwd]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Covid Report" To="rahul20021002@gmail.com">
+                        <ui:SendMail.Files>
+                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                            <InArgument x:TypeArguments="x:String">C:\Users\user\Desktop\RPA Projects\ex3.xlsx</InArgument>
+                          </scg:List>
+                        </ui:SendMail.Files>
+                      </ui:SendMail>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Sent message" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Sent Mail!&quot;]" />
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelProcessScopeX.Body>
+              </ueab:ExcelProcessScopeX>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="ff5042fad481eecb93b60ca4cebc31c4.png" Selector="&lt;html app='chrome.exe' title='Coronavirus (COVID-19) - Google News'/&gt;" Url="https://news.google.com/covid19/map?hl=en-IN&amp;gl=IN&amp;ceid=IN%3Aen" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </FlowStep>
+  </Flowchart>
+</Activity>
